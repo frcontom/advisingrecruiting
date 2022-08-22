@@ -1,0 +1,31 @@
+{
+  "name": "advisingrecruiting",
+  "version": "1.0.0",
+  "description": "Node Api advisingrecruiting",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frcontom/advisingrecruiting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frcontom/advisingrecruiting/issues"
+  },
+  "homepage": "https://github.com/frcontom/advisingrecruiting#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2"
+  }
+}
