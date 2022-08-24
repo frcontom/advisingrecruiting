@@ -1,7 +1,7 @@
 const boom = require('@hapi/boom');
 const slugify = require('slugify')
 const Model = require('../schema/user.schema');
-
+const bcrypt = require('bcrypt');
 class UserModel {
 
      async getuser(id = ''){
@@ -30,6 +30,10 @@ class UserModel {
 
 
     async update(id,obj = {}) {
+        console.log(obj.password)
+         if(obj.password != undefined){
+             obj.password = bcrypt.hashSync(obj.password, 10);
+         }
        return await Model.updateOne({id : id},{$set : Object.assign(obj)});
     }
 

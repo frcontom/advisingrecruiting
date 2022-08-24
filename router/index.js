@@ -8,6 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 //applying routes
+app.use('/login',require('./auth.router'));
 app.use('/profile',require('./profile.router'));
 app.use('/user',require('./user.router'));
 app.use('/category',require('./category.router'));
